@@ -18,5 +18,10 @@ module.exports = {
         "react"
     ],
     "rules": {
+        "linebreak-style": "off",
+        "no-console": "off",
+        "react/prop-types": "off",
+        "react/jsx-props-no-spreading": "off",
+        "import/prefer-default-export": "off",
     }
 };
