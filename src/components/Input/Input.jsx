@@ -7,12 +7,14 @@ function Input({
   value,
   setValue,
   placeholder,
+  ...other
 }) {
   return (
     <TextInput
       value={value}
       onChange={(e) => setValue(e.target.value)}
       placeholder={placeholder}
+      {...other}
     />
   );
 }

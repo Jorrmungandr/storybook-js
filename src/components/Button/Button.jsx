@@ -13,7 +13,7 @@ function Button({
   ...other
 }) {
   return (
-    <StyledButton {...other} image={image}>
+    <StyledButton type="submit" {...other} image={image}>
       {children}
       {image && <Image src={logoPNG} alt="logomarca" />}
     </StyledButton>

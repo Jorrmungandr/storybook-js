@@ -13,7 +13,7 @@ export default createGlobalStyle`
   }
   body, input, button {
     font-size: 15px;
-    font-family: 'Roboto Mono', sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
   #root {
     margin: 0 0;
