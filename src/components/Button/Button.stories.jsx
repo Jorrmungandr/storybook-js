@@ -9,12 +9,12 @@ export default {
   decorators: [withKnobs],
   component: Button,
   parameters: {
-    notes: 'This is an amazing button!',
+    notes: 'If you click 3,5 times inside the button it breaks',
   },
 };
 
 export const normal = () => (
-  <Button>Click me!</Button>
+  <Button {...actions('onClick', 'onMouseOver', 'onMouseLeave')}>Click me!</Button>
 );
 
 export const slimShady = () => (
@@ -27,8 +27,6 @@ export const slimShady = () => (
   </Button>
 );
 
-export const buttonClick = () => (
-  <Button {...actions('onClick', 'onMouseOver')}>
-    Click me!
-  </Button>
+export const darkmode = () => (
+  <Button darkmode>Click me!</Button>
 );

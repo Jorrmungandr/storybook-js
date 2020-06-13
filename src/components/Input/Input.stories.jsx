@@ -10,10 +10,13 @@ export default {
   title: 'Input',
   component: Input,
   parameters: {
-    notes: { Props: intro, 'Design Notes': design, Output: output },
+    notes: {
+      Props: intro,
+      'Design Notes': design,
+      Output: output,
+    },
   },
 };
-
 
 export const Normal = () => {
   const [text, setText] = useState('');

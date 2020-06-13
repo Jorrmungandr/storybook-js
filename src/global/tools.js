@@ -1,7 +1,7 @@
 const Colors = {
   mainBlue: '#26A6F9',
   mainBlack: '#333333',
-  mainGray: '#757575',
+  mainGray: '#010203',
   secondaryWhite: '#E9F3F5',
   mainWhite: '#FFF',
   mainPink: '#EE5683',

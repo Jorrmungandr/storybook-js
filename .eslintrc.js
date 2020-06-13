@@ -20,7 +20,7 @@ module.exports = {
     "rules": {
         "linebreak-style": "off",
         "no-console": "off",
-        "react/prop-types": "off",
+        "import/no-extraneous-dependencies": "off",
         "react/jsx-props-no-spreading": "off",
         "import/prefer-default-export": "off",
     }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import Button from '../Button';
 import Input from '../Input';
@@ -45,5 +46,28 @@ function Form({
     </StyledForm>
   );
 }
+
+Form.propTypes = {
+  /** The string that will appear on top of the form */
+  title: PropTypes.string,
+  /** The fields that should appear as inputs */
+  fields: PropTypes.arrayOf(PropTypes.exact({
+    name: PropTypes.string,
+    placeholder: PropTypes.string,
+  })),
+  /** The submit button value */
+  buttonValue: PropTypes.string,
+  /** The submit function, that receives the fields as parameters */
+  handleSubmit: PropTypes.func,
+};
+
+Form.defaultProps = {
+  title: 'Amazing Form!',
+  fields: [
+    { name: 'example', placeholder: 'Example' },
+  ],
+  buttonValue: 'Send',
+  handleSubmit: ({ example }) => { console.log(example); },
+};
 
 export default Form;

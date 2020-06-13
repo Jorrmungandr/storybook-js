@@ -9,7 +9,7 @@ export default {
   decorators: [withKnobs, withInfo],
   component: Form,
   parameters: {
-    notes: 'This is an amazing button!',
+    notes: 'The only possible field type is text input',
   },
 };
 

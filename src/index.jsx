@@ -8,10 +8,11 @@ function App() {
     { name: 'name', placeholder: 'Name' },
     { name: 'surname', placeholder: 'Surname' },
     { name: 'age', placeholder: 'Age' },
+    { name: 'course', placeholder: 'Curso' },
   ];
 
-  const handleSubmit = ({ name, surname, age }) => {
-    console.log(name, surname, age);
+  const handleSubmit = (results) => {
+    console.log(results);
   };
 
   return (
